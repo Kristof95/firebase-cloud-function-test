@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable consistent-return */
-import * as functions from 'firebase-functions';
+import * as functions from "firebase-functions";
 
 export const checkIfEmailExist = functions
 .region('europe-west1')
