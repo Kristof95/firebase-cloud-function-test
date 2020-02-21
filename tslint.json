@@ -33,5 +33,9 @@
     "trailing-comma": [true, {"multiline": "always", "singleline": "never"}]
   },
 
-  "defaultSeverity": "error"
+  "defaultSeverity": "error",
+
+  "parserOptions": {
+        "sourceType": "module",
+    }
 }

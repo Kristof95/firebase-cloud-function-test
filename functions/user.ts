@@ -1,5 +1,9 @@
-import functions from "firebase-functions";
-import admin from "firebase-admin";
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-underscore-dangle */
+/* eslint-disable consistent-return */
+import * as functions from 'firebase-functions';
+import admin from 'firebase-admin';
 
 export const checkIfEmailExist = functions
 .region('europe-west1')
