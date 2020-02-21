@@ -14,10 +14,9 @@ jobs:
       - uses: actions/setup-node@master
         with:
           node-version: '10.x'
-      - run: yarn
       - name: Build
         working-directory: ./functions
-        run: yarn build
+        run: yarn && yarn build
       - run: ls -la && pwd
       - uses: w9jds/firebase-action@master
         with:
