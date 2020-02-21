@@ -5,12 +5,11 @@ import { checkIfEmailExist } from "./user";
 //   {credential: admin.credential.applicationDefault()},
 // );
 
-let secret = process.env.DEFAULT_SERVICE_ACCOUNT_KEY
-const serviceAccount = require(secret)
+let secret = process.env.DEFAULT_SERVICE_ACCOUNT_KEY;
+const serviceAccount = require(secret || "");
 
 const adminConfig = JSON.parse(process.env.FIREBASE_CONFIG as string);
 adminConfig.credential = admin.credential.cert(serviceAccount);
-adminConfig.databaseURL = functions.config().config.database;
 
 admin.initializeApp(adminConfig);
 
