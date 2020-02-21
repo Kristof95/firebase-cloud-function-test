@@ -3,7 +3,6 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable consistent-return */
 import * as functions from 'firebase-functions';
-import admin from 'firebase-admin';
 
 export const checkIfEmailExist = functions
 .region('europe-west1')
