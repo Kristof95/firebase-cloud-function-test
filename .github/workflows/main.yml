@@ -21,6 +21,6 @@ jobs:
       - run: ls -la && pwd
       - uses: w9jds/firebase-action@master
         with:
-          args: use ${GITHUB_REF##*/} && firebase deploy --debug --only functions
+          args: use default && firebase deploy --debug --only functions
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
