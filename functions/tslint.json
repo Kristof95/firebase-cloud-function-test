@@ -13,6 +13,9 @@
 		"no-unused-vars": 2,
 		"no-undef": 2
 	},
+	"linterOptions": {
+		"project": "functions/tsconfig.json"
+	},
 	"parserOptions": {
 		"ecmaVersion": 11,
 		"sourceType": "module"
