@@ -17,7 +17,7 @@ jobs:
       - run: yarn
       - name: Build
         working-directory: ./functions
-        run: npm install
+        run: yarn build
       - run: ls -la && pwd
       - uses: w9jds/firebase-action@master
         with:
