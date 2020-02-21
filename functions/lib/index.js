@@ -6,7 +6,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const firebase_admin_1 = __importDefault(require("firebase-admin"));
 const user_1 = require("./user");
 exports.checkIfEmailExist = user_1.checkIfEmailExist;
-const adminConfig = JSON.parse(process.env.FIREBASE_CONFIG);
-adminConfig.credential = firebase_admin_1.default.credential.cert(require('../service-account-credentials.json'));
-firebase_admin_1.default.initializeApp(adminConfig);
+firebase_admin_1.default.initializeApp(credential, firebase_admin_1.default.credential.applicationDefault());
 //# sourceMappingURL=index.js.map
