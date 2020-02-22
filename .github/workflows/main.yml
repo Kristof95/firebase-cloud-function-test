@@ -23,4 +23,3 @@ jobs:
           args: use next-js-practice1 && firebase deploy --debug --only functions
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          DEFAULT_SERVICE_ACCOUNT_KEY: ${{ secrets.DEFAULT_SERVICE_ACCOUNT_KEY }}
